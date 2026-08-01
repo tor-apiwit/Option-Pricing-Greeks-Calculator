@@ -60,7 +60,7 @@ def price_report_with_vanilla(S, K, T, r, sigma, option_type):
 
     # 3. Output results
     print(f"The Price of {option_type.capitalize()} option")
-    display(price_table)
+    print(price_table)
 
 
 def greek_report_with_vanilla(S, K, T, r, sigma, option_type):
