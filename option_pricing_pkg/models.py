@@ -13,8 +13,6 @@ Split out from the original Colab notebook
 
 import numpy as np
 from scipy.stats import norm
-import yfinance as yf  # NOTE: imported in the original file but never used
-
 
 def black_scholes_price(S, K, T, r, sigma, option_type="call"):
 
