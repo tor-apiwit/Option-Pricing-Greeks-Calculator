@@ -31,7 +31,5 @@ from option_pricing_pkg import black_scholes_price
 price = black_scholes_price(S=100, K=99, T=1, r=0.03, sigma=0.25, option_type="call")
 ```
 
-## Critical Known Issues (Technical Debt)
-*Please be aware of the following unresolved issues from the original code before utilizing this package in production:*
-
-1. **Binomial Tree Formula Error**: `binomial_tree_price()` calculates Up/Down factors incorrectly by subtracting 1 (`u = np.exp(...) - 1`). This violates standard no-arbitrage models and severely distorts Gamma and Vega results.
+## Critical Known Issues
+1. **Binomial Tree Formula **: `binomial_tree_price()` calculates Up/Down factors incorrectly by subtracting 1 (`u = np.exp(...) - 1`). This violates standard no-arbitrage models and severely distorts Gamma and Vega results.
